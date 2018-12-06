@@ -15,13 +15,13 @@
       </ul>
     </header>
     <main>
-      <h1 class="visual-hidden">Гостиницы Седоны</h1>
+      <h1 class="visually-hidden">Гостиницы Седоны</h1>
       <section class="filter">
-        <h2>Фильтр гостиниц</h2>
+        <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <!--Здесь будет форма-->
       </section>
       <section class="hotels">
-        <h2 class="visual-hidden">Список гостиниц</h2>
+        <h2 class="visually-hidden">Список гостиниц</h2>
         <ul class="hotel-list">
           <li class="hotel-item">
             <div class="hotel-image-wrapper">
@@ -32,10 +32,11 @@
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 4000 р.</span>
               <a class="hotel-details" href="#">Подробнее</a>
-              <a class="button button-grey button-hotel" href="#">Забронировать</a>
+              <button class="button button-grey button-hotel">Забронировать</button>
             </div>
             <div>
-              <img class="hotel-star" src="img/icon-4-stars.png" width="90" height="17" alt="Четыре звезды">
+              <!-- Вставила тут звёзды в png-24, но они всё равно какие-то мутные. Наверное, лучше будет их в стилях добавить всё-таки. -->
+              <img class="hotel-star" src="img/icon-4-stars-24.png" width="90" height="17" alt="Четыре звезды">
               <span class="hotel-rating">Рейтинг: 8,5</span>
             </div>
           </li>
@@ -48,7 +49,7 @@
               <span class="hotel-type">Мотель</span>
               <span class="hotel-price">От 3000 р.</span>
               <a class="hotel-details" href="#">Подробнее</a>
-              <a class="button button-grey button-hotel" href="#">Забронировать</a>
+              <button class="button button-grey button-hotel">Забронировать</button>
             </div>
             <div>
               <img class="hotel-star" src="img/icon-3-stars.png" width="65" height="17" alt="Три звезды">
@@ -64,7 +65,7 @@
               <span class="hotel-type">Апартаменты</span>
               <span class="hotel-price">От 2000 р.</span>
               <a class="hotel-details" href="#">Подробнее</a>
-              <a class="button button-grey button-hotel" href="#">Забронировать</a>
+              <button class="button button-grey button-hotel">Забронировать</button>
             </div>
             <div>
               <img class="hotel-star" src="img/icon-2-stars.png" width="41" height="17" alt="Две звезды">
@@ -79,9 +80,9 @@
         <a href="#">#visitsedona</a>
       </div>
       <ul>
-        <li><a class="social-button" href="#"><img src="#" width="20" height="20" alt="Twitter"></a></li>
-        <li><a class="social-button" href="#"><img src="#" width="20" height="20" alt="Facebook"></a></li>
-        <li><a class="social-button" href="#"><img src="#" width="20" height="20" alt="Youtube"></a></li>
+        <li><a class="social-button" href="#">Twitter</a></li>
+        <li><a class="social-button" href="#">Facebook</a></li>
+        <li><a class="social-button" href="#">Youtube</a></li>
       </ul>
       <div class="copyright">
         <span class="copyright-text">Website by</span>

@@ -16,13 +16,13 @@
     </header>
     <main>
       <section class="intro">
-        <h1 class="visual-hidden">О Седоне</h1>
+        <h1 class="visually-hidden">О Седоне</h1>
         <p class="intro-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="intro-lead">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
       </section>
       <!-- Этот кусок закомментирую, чтобы не отвлекал
       <section class="advantages">
-        <h2 class="visual-hidden">Почему Седона круче Гранд-Каньона</h2>
+        <h2 class="visually-hidden">Почему Седона круче Гранд-Каньона</h2>
         <ul class="advantages-list">
           <li class="advantage-item">
             <h3>Настоящий городок</h3>
@@ -30,15 +30,15 @@
             <p >Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <ul class="features">
               <li class="feature-item">
-                <h3>Жильё</h3>
+                <h4>Жильё</h4>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
               </li>
               <li class="feature-item">
-                <h3>Еда</h3>
+                <h4>Еда</h4>
                 <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
               <li class="feature-item">
-                <h3>Сувениры</h3>
+                <h4>Сувениры</h4>
                 <p>Не только китайского, но и местного производства!</p>
               </li>
             </ul>
@@ -68,17 +68,39 @@
       <section class="search">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-        <!--Здесь будет форма-->
+        <button class="button button-brown button-search">Поиск гостиницы в Седоне</button>
       </section>
+      <form name="popup-search" action="https://echo.htmlacademy.ru" method="post">
+        <p class="popup-item">
+          <!-- Даты заезда и выезда - это же текстовые поля, не type="date"? -->
+          <label for="come">Дата заезда:
+            <input type="text" name="come" id="come" placeholder="24 апреля 2017">
+          </label>
+        </p>
+        <p class="popup-item">
+          <label for="leave">Дата выезда:
+            <input type="text" name="leave" id="leave" placeholder="4 июля 2017">
+          </label>
+        </p>
+        <p class="popup-item">
+          <label for="adults">Взрослые:
+            <input type="number" name="adults" id="adults" value="2">
+          </label>
+          <label for="children">Дети:
+            <input type="number" name="children" id="children" value="0">
+          </label>
+        </p>
+        <button type="submit" class="button button-blue button-popup">Найти</button>
+      </form>
     </main>
     <footer class="page-footer">
       <div class="tag">
         <a href="#">#visitsedona</a>
       </div>
       <ul>
-        <li><a class="social-button" href="#"><img src="#" width="20" height="20" alt="Twitter"></a></li>
-        <li><a class="social-button" href="#"><img src="#" width="20" height="20" alt="Facebook"></a></li>
-        <li><a class="social-button" href="#"><img src="#" width="20" height="20" alt="Youtube"></a></li>
+        <li><a class="social-button" href="#">Twitter</a></li>
+        <li><a class="social-button" href="#">Facebook</a></li>
+        <li><a class="social-button" href="#">Youtube</a></li>
       </ul>
       <div class="copyright">
         <span class="copyright-text">Website by</span>
