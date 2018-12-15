@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 26px;
+
+  background-color: rgb(255, 255, 255);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.main-page {
+  background-image: url("../img/intro-background.jpg");
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-header {
+  background-color: rgb(255, 255, 255);
+}
+
+.page-header {
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: rgb(0, 0, 0);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: rgb(129, 179, 210);
+}
+
+.site-navigation a:active,
+.tag a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.intro-text {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.intro,
+.search {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+/* POPUP */
+
+.popup-search {
+  background-color: rgb(255, 255, 255);
+}
+
+.button {
+  color: rgba(255, 255, 255);
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+  border: none;
+}
+
+.button-brown {
+  background-color: rgb(118, 99, 87);
+}
+
+.button-brown:hover,
+.button-brown:focus {
+  background-color: rgb(96, 78, 67);
+}
+
+.button-brown:active {
+  background-color: rgb(80, 62, 51);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-blue {
+  background-color: rgb(129, 179, 210);
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: rgb(102, 158, 192);
+}
+
+.button-blue:active {
+  background-color: rgb(84, 150, 189);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.popup-search label {
+  font-weight: 700;
+}
+
+.popup-search input {
+  background-color: rgb(242, 242, 242);
+  border: none;
+  font-weight: 700;
+}
+
+.popup-search input[type="text"],
+.popup-search input[type="password"] {
+  font: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.popup-age-number,
+.popup-calendar {
+  border: none;
+  background-color: rgb(242, 242, 242);
+}
+
+.popup-item {
+  font-weight: 700;
+}
+
+/* FOOTER */
+
+.page-footer {
+  background-color: rgb(255, 255, 255);
+}
+
+.tag a {
+  font-size: 21px;
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.tag a:hover,
+.tag a:focus {
+  color: rgb(129, 179, 210);
+}
+
+/* CATALOG */
+
+.hotel-details,
+.hotel-reserve {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.hotel-rating {
+  background-color: rgb(242, 242, 242);
+  color: rgb(102, 102, 102);
+}
+
+.hotel-type,
+.hotel-price {
+  color: rgb(51, 51, 51);
+}
+
+.hotel-name {
+  font-size: 21px;
+  color: rgb(0, 0, 0);
+}
+
+.hotel-name:hover,
+.hotel-name:focus {
+  color: rgb(129, 179, 210);
+}
+
+.hotel-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* VISUALLY-HIDDEN */
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}

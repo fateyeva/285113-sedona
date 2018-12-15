@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="main-page">
     <header class="page-header">
       <img class="header-logo" src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
-      <ul class="site-nav">
+      <ul class="site-navigation">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
@@ -70,25 +73,26 @@
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
         <button class="button button-brown button-search" type="button">Поиск гостиницы в Седоне</button>
       </section>
-      <form name="popup-search" action="https://echo.htmlacademy.ru" method="post">
-        <p class="popup-item">
-          <!-- Даты заезда и выезда - это же текстовые поля, не type="date"? -->
-          <label for="check-in-date">Дата заезда:
-            <input type="text" name="check-in-date" id="check-in-date" placeholder="24 апреля 2017">
-          </label>
+      <form class="popup-search" name="popup-search" action="https://echo.htmlacademy.ru" method="post">
+        <p class="popup-check-in">
+          <label for="check-in-date">Дата заезда:</label>
+          <input type="text" name="check-in-date" id="check-in-date" placeholder="24 апреля 2017">
+          <button class="popup-calendar" type="button" name="check-in-calendar"><img src="img/icon-calendar.svg" width="21" height="22" alt="Календарь"></button>
         </p>
-        <p class="popup-item">
-          <label for="check-out-date">Дата выезда:
-            <input type="text" name="check-out-date" id="check-out-date" placeholder="4 июля 2017">
-          </label>
+        <p class="popup-check-out">
+          <label for="check-out-date">Дата выезда:</label>
+          <input type="text" name="check-out-date" id="check-out-date" placeholder="4 июля 2017">
+          <button  class="popup-calendar" type="button" name="check-out-calendar"><img src="img/icon-calendar.svg" width="21" height="22" alt="Календарь"></button>
         </p>
-        <p class="popup-item">
-          <label for="adults">Взрослые:
-            <input type="number" name="adults" id="adults" value="2">
-          </label>
-          <label for="children">Дети:
-            <input type="number" name="children" id="children" value="0">
-          </label>
+        <p class="popup-age">
+          <label for="adults">Взрослые:</label>
+          <button class="popup-age-number" type="button" name="adults-add">+</button>
+          <input type="number" name="adults" id="adults" value="2">
+          <button class="popup-age-number" type="button" name="adults-remove">-</button>
+          <label for="children">Дети:</label>
+          <button class="popup-age-number" type="button" name="children-add">+</button>
+          <input type="number" name="children" id="children" value="0">
+          <button class="popup-age-number" type="button" name="children-remove">-</button>
         </p>
         <button type="submit" class="button button-blue button-popup">Найти</button>
       </form>
@@ -97,7 +101,7 @@
       <div class="tag">
         <a href="#">#visitsedona</a>
       </div>
-      <ul>
+      <ul class="social">
         <li><a class="social-button visually-hidden" href="#">Twitter</a></li>
         <li><a class="social-button visually-hidden" href="#">Facebook</a></li>
         <li><a class="social-button visually-hidden" href="#">Youtube</a></li>
