@@ -13,6 +13,18 @@ body {
   background-repeat: no-repeat;
 }
 
+/* VISUALLY-HIDDEN */
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(1px, 1px, 1px, 1px);
+	padding: 0;
+	border: 0;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
 .main-page {
   background-image: url("../img/intro-background.jpg");
 }
@@ -46,6 +58,8 @@ ul {
 .tag a:active {
   color: rgba(0, 0, 0, 0.3);
 }
+
+/* INTRO */
 
 .intro-text {
   font-size: 21px;
@@ -183,16 +197,4 @@ h2 {
 
 .hotel-name:active {
   color: rgba(0, 0, 0, 0.3);
-}
-
-/* VISUALLY-HIDDEN */
-
-.visually-hidden {
-	position: absolute;
-	clip: rect(1px, 1px, 1px, 1px);
-	padding: 0;
-	border: 0;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
 }
