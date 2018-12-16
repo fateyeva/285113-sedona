@@ -93,17 +93,28 @@ a {
   color: rgb(129, 179, 210);
 }
 
-.site-navigation a:active,
-.tag a:active {
+.site-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
 /* INTRO */
 
+.intro {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
 .intro-text {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+}
+
+/* SEARCH */
+
+.search {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
 }
 
 .search-title {
@@ -112,18 +123,11 @@ a {
   line-height: 36px;
 }
 
-.intro,
-.search {
-  text-align: center;
-  background-color: rgb(255, 255, 255);
-}
-
 /* POPUP */
 
 .popup-search {
   background-color: rgb(255, 255, 255);
 }
-
 
 .popup-search label {
   font-weight: 700;
@@ -167,6 +171,10 @@ a {
 .tag a:hover,
 .tag a:focus {
   color: rgb(129, 179, 210);
+}
+
+.tag a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .social {
