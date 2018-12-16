@@ -80,7 +80,7 @@ a {
   font-weight: 700;
 }
 
-ul {
+.site-navigation {
   list-style: none;
 }
 
@@ -169,7 +169,15 @@ h2 {
   color: rgb(129, 179, 210);
 }
 
+.social {
+  list-style: none;
+}
+
 /* CATALOG */
+
+.hotel-list {
+  list-style: none;
+}
 
 .hotel-details,
 .hotel-reserve {
