@@ -171,7 +171,8 @@ h2 {
 }
 
 .hotel-name {
-  font-size: 21px;
+  font-size: 18px;
+  font-weight: 700;
   color: rgb(0, 0, 0);
 }
 
