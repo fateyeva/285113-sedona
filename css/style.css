@@ -25,6 +25,45 @@ body {
 	overflow: hidden;
 }
 
+/* BUTTON */
+
+.button {
+  color: rgba(255, 255, 255);
+  font-size: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+  border: none;
+}
+
+.button-brown {
+  background-color: rgb(118, 99, 87);
+}
+
+.button-brown:hover,
+.button-brown:focus {
+  background-color: rgb(96, 78, 67);
+}
+
+.button-brown:active {
+  background-color: rgb(80, 62, 51);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-blue {
+  background-color: rgb(129, 179, 210);
+}
+
+.button-blue:hover,
+.button-blue:focus {
+  background-color: rgb(102, 158, 192);
+}
+
+.button-blue:active {
+  background-color: rgb(84, 150, 189);
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .main-page {
   background-image: url("../img/intro-background.jpg");
 }
@@ -85,42 +124,6 @@ h2 {
   background-color: rgb(255, 255, 255);
 }
 
-.button {
-  color: rgba(255, 255, 255);
-  font-size: 21px;
-  font-weight: 700;
-  text-transform: uppercase;
-  vertical-align: middle;
-  border: none;
-}
-
-.button-brown {
-  background-color: rgb(118, 99, 87);
-}
-
-.button-brown:hover,
-.button-brown:focus {
-  background-color: rgb(96, 78, 67);
-}
-
-.button-brown:active {
-  background-color: rgb(80, 62, 51);
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.button-blue {
-  background-color: rgb(129, 179, 210);
-}
-
-.button-blue:hover,
-.button-blue:focus {
-  background-color: rgb(102, 158, 192);
-}
-
-.button-blue:active {
-  background-color: rgb(84, 150, 189);
-  color: rgba(255, 255, 255, 0.3);
-}
 
 .popup-search label {
   font-weight: 700;
