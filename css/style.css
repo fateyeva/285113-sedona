@@ -13,6 +13,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.main-page {
+  background-image: url("../img/intro-background.jpg");
+}
+
+a {
+  text-decoration: none;
+}
+
 /* VISUALLY-HIDDEN */
 
 .visually-hidden {
@@ -28,11 +36,12 @@ body {
 /* BUTTON */
 
 .button {
-  color: rgba(255, 255, 255);
   font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
   vertical-align: middle;
+  color: rgba(255, 255, 255);
+
   border: none;
 }
 
@@ -46,8 +55,9 @@ body {
 }
 
 .button-brown:active {
-  background-color: rgb(80, 62, 51);
   color: rgba(255, 255, 255, 0.3);
+
+  background-color: rgb(80, 62, 51);
 }
 
 .button-blue {
@@ -60,17 +70,12 @@ body {
 }
 
 .button-blue:active {
-  background-color: rgb(84, 150, 189);
   color: rgba(255, 255, 255, 0.3);
+
+  background-color: rgb(84, 150, 189);
 }
 
-.main-page {
-  background-image: url("../img/intro-background.jpg");
-}
-
-a {
-  text-decoration: none;
-}
+/* HEADER */
 
 .page-header {
   background-color: rgb(255, 255, 255);
@@ -101,6 +106,7 @@ a {
 
 .intro {
   text-align: center;
+
   background-color: rgb(255, 255, 255);
 }
 
@@ -114,6 +120,7 @@ a {
 
 .search {
   text-align: center;
+
   background-color: rgb(255, 255, 255);
 }
 
@@ -134,9 +141,10 @@ a {
 }
 
 .popup-search input {
+  font-weight: 700;
+
   background-color: rgb(242, 242, 242);
   border: none;
-  font-weight: 700;
 }
 
 .popup-search input[type="text"],
@@ -148,8 +156,8 @@ a {
 
 .popup-age-number,
 .popup-calendar {
-  border: none;
   background-color: rgb(242, 242, 242);
+  border: none;
 }
 
 .popup-item {
