@@ -1,3 +1,9 @@
+html,
+body {
+  min-width: 1200;
+  min-height: 2762;
+}
+
 body {
   margin: 0;
 
@@ -13,6 +19,16 @@ body {
   background-repeat: no-repeat;
 }
 
+* {
+  outline: 1px solid red;
+}
+
+.container {
+  margin: 0 auto;
+
+  width: 1200px;
+}
+
 .main-page {
   background-image: url("../img/intro-background.jpg");
 }
@@ -26,11 +42,13 @@ a {
 .visually-hidden {
 	position: absolute;
 	clip: rect(1px, 1px, 1px, 1px);
-	padding: 0;
-	border: 0;
-	height: 1px;
-	width: 1px;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
 	overflow: hidden;
+
+  border: 0;
 }
 
 /* BUTTON */
@@ -75,9 +93,20 @@ a {
   background-color: rgb(84, 150, 189);
 }
 
+.button-search {
+  margin: 0;
+  padding: 0;
+
+  width: 568px;
+  height: 86px;
+}
+
 /* HEADER */
 
 .page-header {
+  display: flex;
+  min-height: 57px;
+
   background-color: rgb(255, 255, 255);
 }
 
@@ -85,7 +114,17 @@ a {
   font-weight: 700;
 }
 
+.header-logo {
+  width: 140px;
+  height: 72px;
+}
+
 .site-navigation {
+  min-width: 1128px;
+  min-height: 57px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -105,6 +144,13 @@ a {
 /* INTRO */
 
 .intro {
+  width: 1200px;
+  min-height: 106px;
+  margin: 0;
+  margin-top: 576px;
+  margin-bottom: 63px;
+  padding: 0;
+
   text-align: center;
 
   background-color: rgb(255, 255, 255);
@@ -119,6 +165,11 @@ a {
 /* SEARCH */
 
 .search {
+  width: 1200px;
+  min-height: 93px;
+  margin: 0;
+  padding: 0;
+
   text-align: center;
 
   background-color: rgb(255, 255, 255);
@@ -133,6 +184,9 @@ a {
 /* POPUP */
 
 .popup-search {
+  width: 568px;
+  min-height: 395;
+
   background-color: rgb(255, 255, 255);
 }
 
@@ -170,6 +224,25 @@ a {
   background-color: rgb(255, 255, 255);
 }
 
+.footer-wrap {
+  display: flex;
+  justify-content: space-around;
+
+  width: 1056px;
+  min-height: 120px;
+  margin: 0;
+  margin-top: 172px;
+
+  padding: 0;
+}
+
+.tag {
+  width: 241px;
+  min-height: 120px;
+  margin: 0;
+  margin-top: 40px;
+}
+
 .tag a {
   font-size: 21px;
   font-weight: 700;
@@ -186,13 +259,36 @@ a {
 }
 
 .social {
+  width: 401px;
+  min-height: 120px;
+  margin: 0;
+  padding-top: 40px;
+
   list-style: none;
+}
+
+.copyright {
+  width: 241px;
+  min-height: 120px;
+  margin: 0;
+  padding-top: 40px;
 }
 
 /* CATALOG */
 
 .hotel-list {
+  display: flex;
+  flex-direction: column;
+
   list-style: none;
+}
+
+.hotel-item {
+  width: 1056px;
+  min-height: 150px;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
 }
 
 .hotel-details,
@@ -202,8 +298,9 @@ a {
 }
 
 .hotel-rating {
-  background-color: rgb(242, 242, 242);
   color: rgb(102, 102, 102);
+
+  background-color: rgb(242, 242, 242);
 }
 
 .hotel-type,
@@ -212,7 +309,7 @@ a {
 }
 
 .hotel-name {
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 700;
   color: rgb(0, 0, 0);
 }
